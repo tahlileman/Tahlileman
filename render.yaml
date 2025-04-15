@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tahlileman
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: ${TELEGRAM_BOT_TOKEN}
